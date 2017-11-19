@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Meu Formulário</title>
+		<link href="TW-LAB-Pratica12exe07.css" type="text/css" rel="stylesheet"/>
+		<script src="TW-LAB-Pratica12exe07.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<main>
+			<!-- <form action="TW-LAB-Pratica12exe07Resp.html" id="formulario" autocomplete="off" method="POST"> -->
+			<form>
+			<fieldset>
+				<legend>Formulário</legend>
+				<!-- <label>Nome: <input id="nome" class="campo_nome" type="text" onblur="validarNome();" /></label> -->
+				<label>Nome: <input id="nome" class="campo_nome" type="text" onblur="successInsert('nome', 'msg_nome')"/></label>
+				<br>
+				<label>Email: <input id="email" class="campo_email" type="email" onblur="successInsert('email', 'msg_email')"/></label>
+				<br>
+				<label>Mensagem: 
+					<br>
+					<textarea id="mensagem" class="msg" cols="35" rows="8" onblur="successInsert('mensagem', 'msg_msg')"></textarea>
+				</label>
+				<br>
+				<input id="res" class="btn_reset botao" type="reset" value="-"/>
+				<input id="btnSub" class="btn_submit botao" value="+" onclick="return init()"  type="button" />
+			</fieldset>
+			</form>
+			<footer>
+				<div id="msg_nome"></div>
+				<div id="msg_email"></div>
+				<div id="msg_msg"></div>
+			</footer>
+		</main>
+	</body>
+</html>

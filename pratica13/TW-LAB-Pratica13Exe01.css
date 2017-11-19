@@ -1,0 +1,24 @@
+header {
+	background: #ffbbdd;
+	font-style: italic;
+}
+
+nav {
+	background: #f0b0d0;
+}
+
+nav li {
+	display: inline-flex;
+}
+
+.logoImg {
+	padding: 10px
+}
+
+.titulo {
+	color: white;
+}
+
+.produto {
+	border: 1px
+}

@@ -1,0 +1,43 @@
+html, body {
+  /*height: 100%;*/
+  min-height: 100%;
+}
+
+body {
+  font: 15px arial;
+  color: rgba(0, 0, 0, .7);
+}
+
+.wrapper {
+  height: 100%;
+  min-height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  /*-webkit-align-items: center;
+  align-items: left;*/
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.wrapper div {
+  padding: 40px;
+  /*border: 1px solid rgba(0, 0, 0, .3)*/
+}
+
+.horizontal {
+  justify-content: flex-start;
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.topnav span {
+    font-size: 17px;
+    float: left;
+    display: block;
+    color: white;
+    overflow: hidden;
+    padding: 14px 16px
+}

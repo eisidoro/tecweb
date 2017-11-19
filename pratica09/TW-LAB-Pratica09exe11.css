@@ -1,0 +1,38 @@
+html, body {
+   font-family: "Segoe UI", Verdana, Tahoma, sans-serif;
+ }
+ #menu {
+  width: 160px;
+  height: 263px;
+  background-color: #fff;
+}
+.item, .sobre {
+    width: 150px;
+    height: 23px;
+    padding-left: 10px;
+    padding-top: 2px;
+    background-color: #fff;
+}
+.item a {
+    color: #336600;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight:bold;
+}
+.item a:hover, .sobre a:hover {
+      text-decoration: none;
+      font-size: 16px;
+      font-weight:bold;
+}
+.sobre {
+      background-color: #0000FF;
+
+/* OBS: salve uma imagem com o nome fundo.jpg
+*      no diretório do seu projeto e remova
+*      o comentário abaixo.
+*/
+/*background-image: url(fundo.jpg);*/
+}
+.sobre a {
+  color:#fff;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    html {
+    font-family: "Segoe UI", "Helvetica Neue", Verdana, Arial, sans-serif;
+    font-size: 16px;
+    height: 95%;
+    }
+    label, input {
+    padding: .5rem;
+    margin: 1rem;
+    }
+    input[type=text]:enabled {
+    background: #ffff00;
+    }
+    input[type='text']:disabled {
+    background: #E01E1E;
+    }
+    input[type="text"]:disabled::placeholder {
+    color: white;
+    }
+</style>
+</head>
+<body>
+    <label>Nome: <input type="text" placeholder="Informe seu nome."></label><br>
+    <label for="">
+            Idade: 
+            <input id="age" type="text" onkeyup="verifyAge()">
+        </label>
+    <label>Cidade: <input type="text" placeholder="Informe sua cidade."></label><br>
+    <label>Estado: <input type="text" disabled="disabled" value="Informe seu estado." id="estado"></label><br>
+    <label>País: <input type="text" disabled="disabled" placeholder="Informe seu país." id="pais"></label><br>
+   
+    <input type="submit" value="Ok" disabled="disabled" id="btnSend">
+    <script src="TW-LAB-Pratica11exe14.js"></script>
+</body>
+</html>

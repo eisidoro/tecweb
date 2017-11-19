@@ -1,0 +1,23 @@
+html, body {
+  font-family: "Segoe UI", Verdana, Tahoma, sans-serif;
+}
+
+body {
+  padding: 15px;
+}
+
+a {
+  color: blueviolet;
+  padding: 5px 15px;
+  border: 1px solid blueviolet;
+  background-color: #FF8C00;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Mouse sobre o link: */
+a:hover {
+  color: white;
+} 

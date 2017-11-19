@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Link Box</title><meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="TW-LAB-Pratica09exe08.css" />
+    <script type="text/javascript" src="TW-LAB-Pratica09exe08.js"></script>
+  </head>   <body onclick="iniciar ();">
+    <div id="sites">
+      <a onmouseover="detalhes ('google')" href="http://www.google.com/"  target="_blank" class="menulink">Google</a>
+      <a onmouseover="detalhes ('yahoo')" href="http://www.yahoo.com/"   target="_blank" class="menulink">Yahoo!</a>
+      <a onmouseover="detalhes ('about')" href="http://www.about.com/"   target="_blank" class="menulink">About.com</a>
+      <a onmouseover="menu ('sites','hidden'); menu ('mensagem','hidden');" href="#" class="menulink">FECHAR</a>
+      <!--Valores do atributo target:           _blank: abre o documento numa nova janela ou aba.           _self: abre o documento na mesma janela ou aba.       -->
+    </div>
+    <br/>
+    <div id="mensagem"></div>
+  </body>
+</html>
