@@ -44,6 +44,11 @@ class PessoaEstrangeira extends Pessoa {
 	get passport () { return this.passport } 
 }
 
+const users = {}
+let user = []
+
+
+
 
 
 
