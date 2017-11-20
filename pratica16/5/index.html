@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+  <style>
+    .item-register input {
+      max-width: 130px;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+
+  <section class="pure-form search-box">
+    <input id="search-term" type="text" class="pure-input-rounded" placeholder="Procurar por...">
+    <select id="search-by">
+      <option value="name">Nome</option>
+      <option value="cpf">CPF</option>
+      <option value="cnpj">CNPJ</option>
+      <option value="passport">Passaporte</option>
+    </select>
+    <button type="button" class="pure-button pure-button-primary" onclick="search()">Buscar</button>
+  </section>
+
+  <br>
+
+  <section class="item-list">
+    <table class="pure-table pure-table-horizontal">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nome</th>
+          <th>Telefone</th>
+          <th>CPF</th>
+          <th>CNPJ</th>
+          <th>Passaporte</th>
+          <th>Valor da compra</th>
+          <th>Ação</th>
+        </tr>
+      </thead>
+      <tbody id="search-result"></tbody>
+      <tbody class="pure-form item-register">
+        <tr class="pure-table-odd">
+          <td></td>
+          <td><input type="text" placeholder="Nome"></td>
+          <td><input type="text" placeholder="Telefone"></td>
+          <td><input type="text" placeholder="CPF"></td>
+          <td><input type="text" placeholder="CNPJ"></td>
+          <td><input type="text" placeholder="Passaporte"></td>
+          <td><input type="number" placeholder="Valor da compra"></td>
+          <td><button type="button" class="pure-button pure-button-primary" onclick="addPessoa()">Cadastrar</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  
+  <!-- JS  -->
+  <script src="./src/Pessoa.js"></script>
+  <script src="./src/PessoaFisica.js"></script>
+  <script src="./src/PessoaJuridica.js"></script>
+  <script src="./src/PessoaEstrangeira.js"></script>
+  <script src="./form.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
