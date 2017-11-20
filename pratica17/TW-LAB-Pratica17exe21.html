@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script>
+  <!-- <script>
     $(document).ready (function () {
       $("button").click (function () {
       $.ajax ({
@@ -11,25 +11,70 @@
         beforeSend: function () {
             alert ("Mensagem apresentada antes do envio da requisição!")
         },
-
         success: function (resp, status, XMLHttpRequest) {
           $("#div1").html ("SUCESSO!!! Parâmetro 'resp': " + resp)
          },
-
         error: function (XMLHttpRequest, status, erro) {
           $("#div2").html ("ERRO!!! Parâmetro 'status': " + status)
          },
-
         complete: function () {
           alert ("Mensagem apresentada após o recebimento da resposta!")
          }
         })
       })
     })
-  </script>
+  </script> -->
+<!--   <script>
+    let request = new XMLHttpRequest()
+    request.open('GET', 'arq.txt', true)
+
+    let data 
+
+    request.onload = function (argument) {
+      if (request.status >= 200 && request.status < 400) {
+        data = JSON.parse(request.responseText)
+      } else {
+        data = new ActiveXObject('Microsoft.XMLHTTP')
+      }
+
+     request.done = function () {
+
+     }
+
+     request.fail = function() {
+
+     }
+
+     request.fail()
+     request.always()
+
+     request.onerror = function (argument) {
+     
+     }
+
+     request.send()
+    }
+  </script> -->
+
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    $("button").click (function () {
+      $.ajax ({ url: 'arq.txt', dataType: 'text' })
+        .done(function(resp, status, XMLHttpRequest) {
+          document.getElementById('div1').innerHTMl = 'SUCESSO!!! Parâmetro resp: ' + resp
+        })
+        .fail(function(XMLHttpRequest, status, erro) {
+          document.getElementById('div2').innerHTMl = 'ERRO!!! Parâmetro status: ' + status
+        })
+        .always(function() {
+          alert ("Mensagem apresentada antes do envio da requisição!")
+        })
+    })
+  })
+</script>
 </head>
 <body>
-<div id="div1"><h2>Permita que AJAX mude este texto.</h2></div>
-<div id="div2"></div> <button>Trocar Conteúdo</button>
+  <div id="div1"><h2>Permita que AJAX mude este texto.</h2></div>
+  <div id="div2"></div> <button>Trocar Conteúdo</button>
 </body>
 </html>
