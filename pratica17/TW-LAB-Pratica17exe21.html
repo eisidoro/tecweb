@@ -61,10 +61,10 @@
     $("button").click (function () {
       $.ajax ({ url: 'arq.txt', dataType: 'text' })
         .done(function(resp, status, XMLHttpRequest) {
-          document.getElementById('div1').innerHTMl = 'SUCESSO!!! Parâmetro resp: ' + resp
+          document.getElementById('div1').innerHTML = 'SUCESSO!!! Parâmetro resp: ' + resp
         })
         .fail(function(XMLHttpRequest, status, erro) {
-          document.getElementById('div2').innerHTMl = 'ERRO!!! Parâmetro status: ' + status
+          document.getElementById('div2').innerHTML = 'ERRO!!! Parâmetro status: ' + status
         })
         .always(function() {
           alert ("Mensagem apresentada antes do envio da requisição!")
